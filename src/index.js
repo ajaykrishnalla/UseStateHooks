@@ -7,7 +7,7 @@ import UseStateHook from "./Components/UseStateHook";
 function App() {
   return (
     <div style={{ marginTop: 20 }}>
-      <UseStateHook />
+      <UseStateHook nameProp="ajaykrishna" />
     </div>
   );
 }

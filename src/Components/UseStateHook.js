@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 
-const UseStateHook = () => {
-  const [name, setName] = useState("");
+const UseStateHook = ({ nameProp }) => {
+  const [name, setName] = useState(nameProp);
   const [details, SetDetails] = useState({
     email: "",
     phone: ""
   });
   const handleNameChange = e => {
     setName(e.target.value);
+    console.log(name);
   };
   const handleDetailChange = e => {
     SetDetails({ ...details, [e.target.name]: e.target.value });
@@ -20,6 +21,7 @@ const UseStateHook = () => {
           className="form-control"
           name="name"
           placeholder="Name...."
+          value={name}
           onChange={handleNameChange}
         />
       </div>
