@@ -7,6 +7,7 @@ const UseEffectHook = () => {
   };
   useEffect(() => {
     handleClick();
+    //eslint-disable-next-line
   }, []);
   return (
     <React.Fragment>
